@@ -7,7 +7,7 @@ This script is meant to provide *mechanistic evidence* that:
 - a candidate-set misranking proxy captures this regime.
 
 It wraps deterministic bbob-largescale problems with the same noise models used in
-`berwes.utils.noise.NoisyProblem` and computes:
+`utils.noise.NoisyProblem` and computes:
 - misranking probe: mean |Δrank| / λ on a CMA-style initial population (2 draws),
 - variance probe: relative std at x0 from repeated evaluations.
 """
@@ -24,8 +24,8 @@ import numpy as np
 
 from _project import BASE_DIR, repo_relpath
 
-from berwes.algorithms import probe_switch as ms
-from berwes.utils.noise import NoisyProblem
+from algorithms import probe_switch as ms
+from utils.noise import NoisyProblem
 
 
 @dataclass(frozen=True)

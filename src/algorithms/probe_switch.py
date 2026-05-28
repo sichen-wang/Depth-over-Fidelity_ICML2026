@@ -6,18 +6,18 @@ try:
 except Exception:  # pragma: no cover - optional dependency
     cma = None
 
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_robust as berw_hetero_robust,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_logw as berw_hetero_logw,
 )
-from berwes.baselines.cmaes_sep import my_optimizer as cmaes_sep
+from baselines.cmaes_sep import my_optimizer as cmaes_sep
 
-from berwes.utils.cma_lock import CMA_GLOBAL_LOCK, cma_locked
+from utils.cma_lock import CMA_GLOBAL_LOCK, cma_locked
 
 
 def _rank_disagreement(f_a: np.ndarray, f_b: np.ndarray) -> float:
@@ -312,7 +312,7 @@ def _tail_ratio_probe(
 
 def _cma_setup(problem, max_evals: int, *, seed_offset: int = 0):
     """
-    Create a sep-CMA-ES (diagonal) instance consistent with `berwes.baselines.cmaes_sep`.
+    Create a sep-CMA-ES (diagonal) instance consistent with `baselines.cmaes_sep`.
 
     Returns (es, lower, upper) or (None, None, None) if pycma is unavailable.
     """

@@ -29,43 +29,43 @@ import numpy as np
 
 from _project import BASE_DIR, repo_relpath
 
-from berwes.algorithms import probe_switch as ms
-from berwes.algorithms.berw_es import (
+from algorithms import probe_switch as ms
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_robust as berw_hetero_robust,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_noise_probe_switch_warmstart as probeswitch_noise_warmstart,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t012 as probeswitch_mr_t012,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t022 as probeswitch_mr_t022,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t012 as probeswitch_mr_robust_t012,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t022 as probeswitch_mr_robust_t022,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t019 as probeswitch_mr_robust_t019,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t021 as probeswitch_mr_robust_t021,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t019 as probeswitch_mr_t019,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t021 as probeswitch_mr_t021,
 )
-from berwes.baselines.cmaes_noise import my_optimizer_uh_maxevals30 as uh_cmaes_maxevals30
-from berwes.baselines.cmaes_sep import my_optimizer as cmaes_sep
-from berwes.baselines.cmaes_sep_resample import my_optimizer_resample5, my_optimizer_resample10
+from baselines.cmaes_noise import my_optimizer_uh_maxevals30 as uh_cmaes_maxevals30
+from baselines.cmaes_sep import my_optimizer as cmaes_sep
+from baselines.cmaes_sep_resample import my_optimizer_resample5, my_optimizer_resample10
 
 
 def parse_int_list(spec: str) -> list[int]:

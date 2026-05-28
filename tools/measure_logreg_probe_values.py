@@ -19,7 +19,7 @@ import os
 from collections import defaultdict
 
 from _project import BASE_DIR, repo_relpath
-from berwes.algorithms import probe_switch as ms
+from algorithms import probe_switch as ms
 
 import run_logreg_minibatch_sweep as logreg  # local tools/ module
 

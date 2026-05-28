@@ -39,56 +39,56 @@ import numpy as np
 
 from _project import BASE_DIR, repo_relpath
 
-from berwes.algorithms import probe_switch as ms
-from berwes.algorithms.berw_es import (
+from algorithms import probe_switch as ms
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_robust as berw_hetero_robust_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t008 as probeswitch_mr_t008_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t010 as probeswitch_mr_t010_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t012 as probeswitch_mr_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t022 as probeswitch_mr_t022_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t012 as probeswitch_mr_robust_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t022 as probeswitch_mr_robust_t022_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t019 as probeswitch_mr_robust_t019_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t021 as probeswitch_mr_robust_t021_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t019 as probeswitch_mr_t019_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t021 as probeswitch_mr_t021_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_noise_probe_switch as probeswitch_noise_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_noise_probe_switch_warmstart as probeswitch_noise_warmstart_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_variance_probe_switch as probeswitch_var_optimizer,
 )
-from berwes.baselines.cmaes_noise import my_optimizer_uh_maxevals30 as uh_cmaes_maxevals30_optimizer
-from berwes.baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
-from berwes.baselines.cmaes_sep_resample import my_optimizer_resample5 as cmaes_resample5_optimizer
-from berwes.baselines.cmaes_sep_resample import my_optimizer_resample10 as cmaes_resample10_optimizer
+from baselines.cmaes_noise import my_optimizer_uh_maxevals30 as uh_cmaes_maxevals30_optimizer
+from baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
+from baselines.cmaes_sep_resample import my_optimizer_resample5 as cmaes_resample5_optimizer
+from baselines.cmaes_sep_resample import my_optimizer_resample10 as cmaes_resample10_optimizer
 
 
 def parse_int_list(spec: str) -> list[int]:

@@ -6,7 +6,7 @@ try:
 except Exception:  # pragma: no cover - optional dependency
     cma = None
 
-from berwes.utils.cma_lock import cma_locked
+from utils.cma_lock import cma_locked
 
 
 def _choose_boundary_band(order: np.ndarray, mu: int, *, band: int, count: int) -> np.ndarray:

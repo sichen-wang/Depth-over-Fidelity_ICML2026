@@ -18,7 +18,7 @@ Purpose: evaluate sensitivity of UH-CMA-ES to its noise-handling hyperparameter 
   - `UH-CMA-ES(maxevals=30)` = pycma `NoiseHandler(maxevals=[1,1,30], epsilon=0)`
 
 Implementation entry points:
-- `src/berwes/baselines/cmaes_noise.py`
+- `src/baselines/cmaes_noise.py`
 
 ## Results (noise-free, COCO `.dat` “best noise-free fitness - Fopt”)
 

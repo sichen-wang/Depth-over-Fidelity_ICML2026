@@ -44,17 +44,17 @@ import numpy as np
 
 from _project import BASE_DIR, repo_relpath
 
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t012 as probeswitch_mr_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_warmstart_t012 as probeswitch_mr_warmstart_t012_optimizer,
 )
-from berwes.baselines.cmaes_full import my_optimizer as cmaes_full_optimizer
-from berwes.baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
+from baselines.cmaes_full import my_optimizer as cmaes_full_optimizer
+from baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
 
 
 def parse_int_list(spec: str) -> list[int]:

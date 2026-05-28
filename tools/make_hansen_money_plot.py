@@ -62,7 +62,7 @@ from plot_style import (
     WIDTHS,
 )
 
-from berwes.utils.display_names import get_display_name, get_algorithm_depth
+from utils.display_names import get_display_name, get_algorithm_depth
 
 
 def parse_int_list(spec: str) -> list[int]:

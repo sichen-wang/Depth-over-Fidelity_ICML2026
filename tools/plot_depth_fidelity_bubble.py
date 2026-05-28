@@ -34,7 +34,7 @@ import numpy as np
 
 from _project import BASE_DIR, repo_relpath
 from plot_style import apply_style, get_algo_color, get_figsize, add_grid, save_figure
-from berwes.utils.display_names import get_display_name
+from utils.display_names import get_display_name
 
 
 @dataclass(frozen=True)

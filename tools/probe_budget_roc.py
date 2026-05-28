@@ -21,7 +21,7 @@ import cocoex
 import numpy as np
 
 from _project import BASE_DIR, repo_relpath
-from berwes.algorithms import probe_switch as ms
+from algorithms import probe_switch as ms
 
 
 def parse_int_list(spec: str) -> list[int]:

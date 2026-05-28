@@ -14,7 +14,7 @@ it compares BERW / ProbeSwitch against classic evaluation-stage uncertainty-redu
 - Runner: `tools/run_coco_bbob_noisy_parallel.py` + noise-free extraction
 - Algorithms:
   - `CMA-ES`
-  - `UH-CMA-ES` (pycma NoiseHandler, Hansen 2009-based; this config uses `maxevals=[1,1,1]`; see `src/berwes/baselines/cmaes_noise.py`)
+  - `UH-CMA-ES` (pycma NoiseHandler, Hansen 2009-based; this config uses `maxevals=[1,1,1]`; see `src/baselines/cmaes_noise.py`)
   - `CMA-ES-Resample(k=2/3/5)` (fixed-k mean resampling per candidate; last generation uses ≤k if budget is tight)
   - `BERW-Hetero`
   - `ProbeSwitch-MR(t=0.12)`

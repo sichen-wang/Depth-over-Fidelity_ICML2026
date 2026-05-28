@@ -69,4 +69,4 @@ If a runner rejects an algorithm name, it prints the list of supported keys.
 
 ## Display Name Mapping
 
-For programmatic access, the file `src/berwes/utils/display_names.py` provides a mapping from code names to paper-facing display names used in figures and tables.
+For programmatic access, the file `src/utils/display_names.py` provides a mapping from code names to paper-facing display names used in figures and tables.

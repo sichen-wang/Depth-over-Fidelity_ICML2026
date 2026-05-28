@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from _project import BASE_DIR, repo_relpath
-from berwes.utils.display_names import get_display_name
+from utils.display_names import get_display_name
 
 
 def _fmt_p(p: float) -> str:

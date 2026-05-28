@@ -6,7 +6,7 @@ try:
 except Exception:  # pragma: no cover - optional dependency
     cma = None
 
-from berwes.utils.cma_lock import cma_locked
+from utils.cma_lock import cma_locked
 
 
 def _cmaes_sep_resample(problem, max_evals: int, *, reps: int) -> None:

@@ -48,26 +48,26 @@ import numpy as np
 
 from _project import BASE_DIR, repo_relpath
 
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_robust as berw_hetero_robust_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t012 as probeswitch_mr_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_warmstart_t012 as probeswitch_mr_warmstart_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_noise_probe_switch as probeswitch_noise_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_noise_probe_switch_warmstart as probeswitch_noise_warmstart_optimizer,
 )
-from berwes.baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
-from berwes.baselines.cmaes_sep_bootstrap_rank import (
+from baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
+from baselines.cmaes_sep_bootstrap_rank import (
     my_optimizer as cmaes_sep_bootstrap_rank_optimizer,
 )
 

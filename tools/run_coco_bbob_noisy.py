@@ -20,94 +20,94 @@ import cocoex
 
 from _project import BASE_DIR, repo_relpath
 
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_bs16 as berw_hetero_bs16_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_bs64 as berw_hetero_bs64_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_reeval0 as berw_hetero_reeval0_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_reeval3 as berw_hetero_reeval3_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_robust as berw_hetero_robust_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_tmatch as berw_hetero_tmatch_optimizer,
 )
-from berwes.algorithms.berw_es import (
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_heterovar as berw_hetero_var_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t012 as probeswitch_mr_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t022 as probeswitch_mr_t022_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t019 as probeswitch_mr_t019_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t021 as probeswitch_mr_t021_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t026 as probeswitch_mr_t026_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t038 as probeswitch_mr_t038_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_t046 as probeswitch_mr_t046_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t012 as probeswitch_mr_robust_t012_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t022 as probeswitch_mr_robust_t022_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t019 as probeswitch_mr_robust_t019_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t021 as probeswitch_mr_robust_t021_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_robust_t026 as probeswitch_mr_robust_t026_optimizer,
 )
-from berwes.baselines.cmaes_noise import (
+from baselines.cmaes_noise import (
     my_optimizer as uh_cmaes_default_optimizer,
 )
-from berwes.baselines.cmaes_noise import (
+from baselines.cmaes_noise import (
     my_optimizer_uh_maxevals10 as uh_cmaes_maxevals10_optimizer,
 )
-from berwes.baselines.cmaes_noise import (
+from baselines.cmaes_noise import (
     my_optimizer_uh_maxevals30 as uh_cmaes_maxevals30_optimizer,
 )
-from berwes.baselines.cmaes_full import my_optimizer as cmaes_full_optimizer
-from berwes.baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
-from berwes.baselines.cmaes_sep_resample import (
+from baselines.cmaes_full import my_optimizer as cmaes_full_optimizer
+from baselines.cmaes_sep import my_optimizer as cmaes_sep_optimizer
+from baselines.cmaes_sep_resample import (
     my_optimizer_resample2 as cmaes_resample2_optimizer,
 )
-from berwes.baselines.cmaes_sep_resample import (
+from baselines.cmaes_sep_resample import (
     my_optimizer_resample3 as cmaes_resample3_optimizer,
 )
-from berwes.baselines.cmaes_sep_resample import (
+from baselines.cmaes_sep_resample import (
     my_optimizer_resample5 as cmaes_resample5_optimizer,
 )
-from berwes.baselines.cmaes_sep_resample import (
+from baselines.cmaes_sep_resample import (
     my_optimizer_resample10 as cmaes_resample10_optimizer,
 )
-from berwes.baselines.cmaes_lra import my_optimizer as lra_cmaes_optimizer
-from berwes.algorithms.berw_es import (
+from baselines.cmaes_lra import my_optimizer as lra_cmaes_optimizer
+from algorithms.berw_es import (
     my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero_logw as berw_hetero_logw_optimizer,
 )
-from berwes.algorithms.probe_switch import (
+from algorithms.probe_switch import (
     my_optimizer_misranking_probe_switch_logw_t012 as probeswitch_mr_logw_t012_optimizer,
 )
 

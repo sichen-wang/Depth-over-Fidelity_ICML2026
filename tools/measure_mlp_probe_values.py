@@ -17,7 +17,7 @@ import os
 from collections import defaultdict
 
 from _project import BASE_DIR, repo_relpath
-from berwes.algorithms import probe_switch as ms
+from algorithms import probe_switch as ms
 
 import run_mlp_minibatch_sweep as mlp  # local tools/ module
 

@@ -6,7 +6,7 @@ try:
 except Exception:  # pragma: no cover
     cma = None
 
-from berwes.utils.cma_lock import cma_locked
+from utils.cma_lock import cma_locked
 
 
 class SubspaceCMAES:

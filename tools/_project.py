@@ -1,9 +1,9 @@
 """
-Project bootstrap helpers for scripts under `BerwES/tools/`.
+Project bootstrap helpers for scripts under `tools/`.
 
 This module:
-- exposes `BASE_DIR` (the `BerwES/` folder),
-- ensures `BerwES/src/` is on `sys.path` so `berwes` imports work when running tools as scripts.
+- exposes `BASE_DIR` (the repository root),
+- ensures `src/` is on `sys.path` so package imports (algorithms, baselines, utils) work when running tools as scripts.
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ def repo_relpath(path: str) -> str:
     Convert an absolute/relative path to a repo-relative path (rooted at BASE_DIR)
     when possible.
 
-    For anonymity and portability, this helper never returns absolute paths. If the
+    For portability, this helper never returns absolute paths. If the
     input path is outside the repository, we fall back to an `external/<basename>`
     placeholder.
     """

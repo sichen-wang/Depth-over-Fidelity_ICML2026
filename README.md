@@ -1,4 +1,4 @@
-# Reproducibility Package: Depth over Fidelity in Fixed-Budget Noisy ES
+# Depth over Fidelity in Fixed-Budget Noisy ES
 
 This is a **standalone reproducibility package** for the ICML 2026 paper:
 *"Depth over Fidelity in Fixed-Budget Noisy Evolution Strategies"*
@@ -63,7 +63,7 @@ Options:
 ## Directory Layout
 
 ```
-├── src/berwes/      # Python package (RB-PEM, Probe-and-Switch, baselines)
+├── src/             # Python modules (algorithms, baselines, utils)
 ├── tools/           # Experiment runners and plotting scripts
 ├── evidence/        # Precomputed results (paper figures/tables)
 ├── docs/            # Documentation

@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from _project import BASE_DIR, repo_relpath
-from berwes.utils.display_names import get_display_name
+from utils.display_names import get_display_name
 
 @dataclass(frozen=True)
 class Bin:

@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from _project import BASE_DIR, repo_relpath
-from berwes.algorithms.berw_es import my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero
+from algorithms.berw_es import my_optimizer_noise_adaptive_sel_bootstrap_weights_hetero as berw_hetero
 
 
 class ProblemWrapper:
